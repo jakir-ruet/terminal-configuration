@@ -46,9 +46,9 @@ source ~/.zshrc
 ```
 
 #### Configuration
-Here you must answer some questions, give these answer as you want.
 ```bash
 p10k configure
+# Here you must answer some questions, give these answer as you want.
 ```
 
 #### Install ZSH Plugins
