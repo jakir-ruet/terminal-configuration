@@ -42,8 +42,8 @@ source ~/.zshrc
 ```bash
 # put this line on 'setting.json' in vscode.
 "terminal.integrated.fontFamily": "monospace, MesloLGS NF, fontawesome"
+# You may setup font as default (MesloLGS NF) in you default terminal, then it will work.
 ```
-You may setup font as default (MesloLGS NF) in you default terminal, then it will work.
 
 #### Configuration
 Here you must answer some questions, give these answer as you want.
