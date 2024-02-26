@@ -4,9 +4,9 @@
 
 ## Visit Us [Lapis Soft](http://www.lapissoft.com)
 
-### Welcome to Terminal Configuration on MacOS
+### Welcome to Terminal Configuration on MacOS/Linux
 
-#### Homebrew Install
+#### Homebrew Install (for MacOS)
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # add path
@@ -14,14 +14,19 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/[USERNAME]/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-#### iTerm2 Install
+#### iTerm2 Install (Optional for MacOS & Not Necessary for Linux)
 ```bash
 brew install --cask iterm2
 ```
 
 #### Install Git
 ```bash
-brew install git
+brew install git # for MacOS
+apt install git # for ubuntu
+```
+#### Install zsh only for Linux, Already installed on MacOS
+```bash
+apt install zsh
 ```
 
 #### Install Oh My Zsh
@@ -31,6 +36,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 #### Install PowerLevel10K Theme for Oh My Zsh
 ```bash
+apt install fonts-font-awesome # for for ubuntu
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 # zsh_theme add into '~/.zshrc'
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -64,6 +70,7 @@ source ~/.zshrc
 ```
 
 #### Done
+
 
 ## Courtesy of Jakir
 
