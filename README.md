@@ -36,7 +36,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 #### Install PowerLevel10K Theme for Oh My Zsh
 ```bash
-apt install fonts-font-awesome # for for ubuntu
+apt install fonts-font-awesome # for ubuntu
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 # zsh_theme add into '~/.zshrc'
 ZSH_THEME="powerlevel10k/powerlevel10k"
