@@ -22,6 +22,17 @@ apt install git # for ubuntu
 sudo dnf install git # for redhat
 sudo dnf install epel-release
 ```
+#### Font Install
+```bash
+# put this line on 'setting.json' in vscode.
+"terminal.integrated.fontFamily": "monospace, MesloLGS NF, fontawesome"
+# You may setup font as default (MesloLGS NF) in you default terminal, then it will work.
+cd /etc/fonts/
+curl -fLo "MesloLGS NF Regular.ttf" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+fc-cache -fv # Update the Font Cache
+fc-list | grep "MesloLGS NF" # Verify the Installation
+echo -e "\uf0c9 \uf015 \ue0b0" # Test the Font
+```
 #### Install zsh only for Linux, Already installed on MacOS
 ```bash
 apt install zsh
@@ -43,13 +54,6 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # load these new plugins
 source ~/.zshrc
-```
-
-#### Font Install
-```bash
-# put this line on 'setting.json' in vscode.
-"terminal.integrated.fontFamily": "monospace, MesloLGS NF, fontawesome"
-# You may setup font as default (MesloLGS NF) in you default terminal, then it will work.
 ```
 
 #### Configuration
