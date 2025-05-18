@@ -19,10 +19,13 @@ brew install --cask iterm2
 ```bash
 brew install git # for MacOS
 apt install git # for ubuntu
+sudo dnf install git # for redhat
+sudo dnf install epel-release
 ```
 #### Install zsh only for Linux, Already installed on MacOS
 ```bash
 apt install zsh
+dnf install zsh
 ```
 
 #### Install Oh My Zsh
@@ -33,6 +36,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #### Install PowerLevel10K Theme for Oh My Zsh
 ```bash
 apt install fonts-font-awesome # for ubuntu
+sudo dnf install fontawesome-fonts # for redhat
+dnf search awesome | grep font # check
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 # zsh_theme add into '~/.zshrc'
 ZSH_THEME="powerlevel10k/powerlevel10k"
